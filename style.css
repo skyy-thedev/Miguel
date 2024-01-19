@@ -170,7 +170,7 @@ main h2 {
 /* Sobre */
 
 #Sobre {
-    background-image: url(img/fundo.jpg);
+    /* background-image: url(img/fundo.jpg); */
     background-position-x: -250px;
     background-position-y: 100px;
     background-size: cover;
@@ -179,12 +179,12 @@ main h2 {
     justify-content: center;
 }
 .destaqueSobre {
-    color: white;
-    text-shadow: 1px 1px 3px black;
+    color: #022031;
+    /* text-shadow: 1px 1px 3px black; */
 } 
  .textoSobre {
-    text-shadow: 1px 1px 3px #000000;
-    color: white;
+    /* text-shadow: 1px 1px 3px #000000; */
+    color: #022031;
     padding: 10px 10px 10px 10px;
     text-align: center;
     justify-content: center;
