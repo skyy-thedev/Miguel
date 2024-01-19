@@ -178,6 +178,17 @@ main h2 {
     text-align: center;
     justify-content: center;
 }
+#Sobre h1 {
+    font-size: 2em;
+}
+#Sobre h2 {
+    font-size: 1.5em;
+}
+#Sobre h3 {
+    text-shadow: #022031;
+    color: #297D94;
+    font-size: 1em;
+}
 .foto {
     background-image: url(img/pict.jpg);
     margin: 10px 40px;
@@ -199,6 +210,17 @@ main h2 {
     text-align: center;
     justify-content: center;
 } 
+#null {
+    background-color: #022031;
+    text-shadow: 1px 1px 0px black;
+    font-family: 'Augustus', 'sans serif';
+    padding: 10px 0px;
+    color: white;
+    width: cover;
+    height: 35px;
+    text-align: center;
+    justify-content: center;
+}
 .Trio {
     margin-top: 30px;
     height: 150px;
