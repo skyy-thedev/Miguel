@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/geo-sans-light');
+@import url('https://fonts.cdnfonts.com/css/augustus');
+
 
 /* CSS RESET */
 
@@ -12,6 +15,7 @@
 }
 /* Topo do site */
 #topo {
+    font-family: 'GeosansLight', sans-serif;
     position: fixed;
     right: 10px;
     bottom: 10px;
@@ -22,7 +26,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
 }
-
 /* Final do site */
 
 
@@ -34,7 +37,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(img/fundo.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -91,9 +93,9 @@ header {
     height: 90px;
 }
 #logo img {
-    margin-top: -45px;
-    margin-left: 2px;
-    width: 350px;
+    margin-top: -35px;
+    margin-left: 3px;
+    width: 300px;
     height: 150px;
 }
 #check {
@@ -125,7 +127,7 @@ nav ul {
     height: 100vh;
     top: 90px;
     right: -100%;
-    width: 100px;
+    width: 240px;
     transition: all 0.5s;
 }
 nav a {
@@ -148,8 +150,8 @@ nav ul li a {
 /* Destaque */
 main {
     height: 65vh;
-    background: url(img/fundo.jpg);
-    background-position-y: -300px;
+    background-image: url(img/foto.jpg);
+    background-position-y: 0px;
     background-attachment: fixed;
     background-size: cover;
     color: white;
@@ -168,11 +170,10 @@ main h2 {
 /* Sobre */
 
 #Sobre {
-    background-image: url(img/iconwhite2.png);
-    background-color: #000000;
+    background-image: url(img/fundo.jpg);
+    background-position-x: -250px;
+    background-position-y: 100px;
     background-size: cover;
-    background-position: right -100px bottom -150px;
-    background-repeat: no-repeat;
     padding: 30px 0px;
     text-align: center;
     justify-content: center;
@@ -180,17 +181,14 @@ main h2 {
 .destaqueSobre {
     color: white;
     text-shadow: 1px 1px 3px black;
-}
-.textoSobre {
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 35px;
-    box-shadow: 1px 1px 3px #000000;
+} 
+ .textoSobre {
     text-shadow: 1px 1px 3px #000000;
     color: white;
     padding: 10px 10px 10px 10px;
     text-align: center;
     justify-content: center;
-}
+} 
 .Trio {
     margin-top: 30px;
     height: 150px;
@@ -202,8 +200,10 @@ main h2 {
 
 #Portifolio {
     background-color:  white;
+    height: 550px;
     text-align: center;
     padding: 50px;
+
 }
 .imgx {
     display: flex;
@@ -249,14 +249,14 @@ main h2 {
 }
 /* CONTATO REAL */
 #Contato1 {
-    height: 170px;
+    height: 150px;
     margin-top: 0px;
     background-color: #000000;
     text-align: center;
 }
 
 .textoContato {
-    margin-top: -70px;
+    margin-top: 10px;
     text-align: center;
     font-size: small;
     color: white;
@@ -445,7 +445,7 @@ footer {
         transition: color 0.3s;
     }
     nav ul li a:hover {
-        color: red;
+        color: #06A1B4;
     }
     #logo img {
         width: 280px;
