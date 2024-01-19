@@ -1,7 +1,7 @@
 /* Google Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Open+Sans:wght@300;400&display=swap');
 
 /* CSS RESET */
 
@@ -19,14 +19,26 @@
 
 /* Corpo do site */
 body {
-
-    font-family: 'Open Sans', "sans-serif";
+    font-family: 'Montserrat', sans-serif;
     font-size: 1em;
 }
+
 /* Final do site */
 
 
 /* Layout */
+.Parallax {
+    color: #343538;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 .Container {
     background-color: rgba(255, 255, 255, 0);
     margin: 0 auto;
@@ -79,8 +91,8 @@ header {
     height: 90px;
 }
 #logo img {
-    margin-top: -10px;
-    margin-left: 10px;
+    margin-top: -45px;
+    margin-left: 2px;
     width: 350px;
     height: 150px;
 }
