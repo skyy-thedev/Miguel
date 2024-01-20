@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="img/icon.png">
-        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css">
         <link rel="stylesheet" href="style.css">
             <title>DR. MIGUEL IUGAS</title>
 
@@ -65,24 +65,29 @@
             </div>
         </section>
         <!--- PORTIFOLIO -->
-        <article id="Portifolio">
-            <div class="Cards Flex3">
-                <div class="imgx" id="imgx">
-                <div class="Card" id="imgx">
-                    <img src="img/tradicional.jpg" alt="">
-                    <br><br><h2><strong>Lorem ipsum</strong></h2><hr>
-                    <p> <STRONG>Lorem ipsum dolor sit amet consectetur adipisicing elit. </STRONG><br>
-                    </p>
+            <div class="hero-slider" carousel>
+                <div class="carousel-cell" style="background-image: url(img/fotooriginal.jpg);">
+                    <div class="info-container">
+                        <h3 class="header">First Slide</h3>
+                        <h2 class="text">Parallex Slider</h2>
+                        <button>Getting Started</button>
+                    </div>
                 </div>
-                <div class="Card" id="imgx">
-                    <!--img src="img/pic3.bmp" alt="Amarula"!-->
+                <div class="carousel-cell" style="background-image: url(img/foto.jpg);">
+                    <div class="info-container">
+                        <h3 class="header">Second Slide</h3>
+                        <h2 class="text">Parallex Slider</h2>
+                        <button>Getting Started</button>
+                    </div>
                 </div>
-                <div class="Card" id="imgx">
-                    <!--img src="img/pic5.bmp" alt="Sala"!-->
+        
+                <div class="carousel-cell" style="background-image: url(img/pict.jpg);">
+                    <div class="info-container">
+                        <h3 class="header">Third Slide</h3>
+                        <h2 class="text">Parallex Slider</h2>
+                        <button>Getting Started</button>
+                    </div>
                 </div>
-                </div>
-            </div>
-        </article>
         <!-- CONTATOS -->
         <section id="Contato1">
             <div class="Container Flex2">
@@ -108,6 +113,8 @@
             </div>
         </footer>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js"></script>
+        <script src="script.js"></script>
         <a href="#Inicio" id="topo"><img src="img/topicon.png" alt="Para o inicio"></a>
     </body>
     

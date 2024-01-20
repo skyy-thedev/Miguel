@@ -1,22 +1,30 @@
-var container = document.getElementById('container');
-var animatedImage = document.getElementById('animatedImage');
-
-function fadeInImage() {
-  var currentPosition = -100; // Inicializa a posição à esquerda
-  var opacity = 0; // Inicializa a opacidade
-
-  function frame() {
-    currentPosition += 1; // Move da esquerda para a direita
-    opacity += 0.01; // Aumenta gradualmente a opacidade
-    animatedImage.style.left = currentPosition + '%';
-    animatedImage.style.opacity = opacity;
-
-    if (currentPosition >= 0) {
-      clearInterval(animationInterval);
-    }
+const options = {
+  accessibility: true,
+  prevNextButtons: true,
+  pageDots: true,
+  setGallerySize: false,
+  arrowShape: {
+      x0: 1,
+      x1: 58,
+      y1: 62,
+      x2: 55,
+      y2: 48,
+      x3: 18
   }
+};
 
-  var animationInterval = setInterval(frame, 10);
+// Function to set background position forr slides
+function setBgPosition(slide, index) {
+  const x = -(slide.target + flkty.x) / 3;
+  slides[index].style.backgroundPosition = `${x}px`;
 }
 
-fadeInImage(); // Chama a função para iniciar a animação quando a página carrega
+// Slides initialization
+const carousel = document.querySelector('[carousel]');
+const slides = Array.from(document.getElementsByClassName('carousel-cell'));
+const flkty = new Flickity(carousel, options);
+
+// Event listener using bg position
+flkty.on('scroll', () => {
+  flkty.slides.forEach(setBgPosition);
+});
