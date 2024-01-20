@@ -372,8 +372,10 @@ footer {
     }
     /* Destaque */
     main {
+        background-position: right 80px;
+        background-position-y: -100px;
         margin-top: -10px;
-        height: 50vh;
+        height: cover;
     }
         /* CONTATOS */
         .textoContato {
@@ -394,6 +396,9 @@ footer {
             color: white;
             text-shadow: 1px 1px 2px #000000;
             justify-content: space-between;
+        }
+        .foto {
+            margin-left: 275px; 
         }
 }
 
@@ -484,16 +489,51 @@ footer {
         height: 150px;
     }
      /* Sobre nós */
-     #Sobre {
-    background-image: url(img/iconwhite2.png);
-    background-color: #000000;
-    background-size: 80vh;
-    background-position: right -30px bottom -300px;
-    background-repeat: no-repeat;
-    padding: 30px 0px;
+    #Sobre {
+    background-color: white;
+    padding: 30px 120px;
     text-align: center;
     justify-content: center;
-}
+    align-items: left;
+    }
+    .textoSobre {
+        text-indent: center;
+        text-align: center;
+    }
+    .foto {
+        position: absolute;
+        left: -100%;
+        opacity: 0;
+        width: 110vh;
+        height: 50vh;
+    }
+    /* #container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+  
+    #animatedImage {
+        position: absolute;
+        left: 100%; /* Inicialmente fora da tela à direita */
+        /* top: 50%;
+        opacity: 0; /* Inicialmente invisível */
+        /* transition: opacity 1s, left 1s; Adiciona transições para suavizar o efeito
+      } */
+    .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Row {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
      /* Destaque */
      main {
         margin-top: -50px;
