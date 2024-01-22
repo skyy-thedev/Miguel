@@ -536,21 +536,23 @@ footer {
      /* Sobre nós */
     #Sobre {
     background-color: white;
-    padding: 30px 120px;
-    text-align: center;
-    justify-content: center;
+    padding: 10px 10px;
+    text-align: left;
+    justify-content: left;
     align-items: left;
     }
     .textoSobre {
         text-indent: center;
         text-align: center;
+        position: relative;
+        right: 0px;
+        transition: transform 1s ease, left 1s ease;
     }
     .foto {
-        position: absolute;
-        left: -100%;
-        opacity: 0;
-        width: 110vh;
-        height: 50vh;
+        justify-self: left;
+        position: relative;
+        left: -400px;
+        width: 300vh;
     }
     /* #container {
         position: relative;
