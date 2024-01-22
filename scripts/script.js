@@ -1,3 +1,10 @@
+  function moverFoto() {
+    var foto = document.getElementById('userpic');
+    foto.style.transform = 'translate(0%, 0)'
+    foto.style.left = '0%';
+  }
+  setTimeout(moverFoto, 1000);
+
 const options = {
   accessibility: true,
   prevNextButtons: true,

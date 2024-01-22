@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Open+Sans:wght@300;400&display=swap');
 @import url('https://fonts.cdnfonts.com/css/geo-sans-light');
 @import url('https://fonts.cdnfonts.com/css/augustus');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css");
 
 
 /* CSS RESET */
@@ -285,6 +286,9 @@ main h2 {
     padding: 30px 0px;
     height: 500px;
     width: 350px;
+    position: relative;
+    left: -360px; /* Começa fora da tela à esquerda */
+    transition: transform 1s ease, left 1s ease
 }
 .destaqueSobre {
     font-family: 'Augustus', 'sans serif';
