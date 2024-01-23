@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="img/icon.png">
-        <script src="scripts/script.js"></script>
+        <script src="scripts/script.js" defer></script>
         <link rel="stylesheet" href="style.css">
 
             <title>DR. MIGUEL IUGAS</title>
@@ -23,11 +23,11 @@
                 <input type="checkbox" name="menu" id="check">
                 <label for="check">&#x268c;</label>
                 <ul>
-                    <li><a href="#Sobre">Sobre</a></li>
-                    <li><a href="#Portifolio">Procedimentos</a></li>
-                    <li><a href="#Consulta">Consultas e Mentorias</a></li>
-                    <li><a href="login.html">Agendamento</a></li>
-                    <li><a href="#Contato">Contato</a></li>
+                    <div class="menu-item"><li><a href="#Sobre">Sobre</a></li></div>
+                    <div class="menu-item"><li><a href="#Portifolio">Procedimentos</a></li></div>
+                    <div class="menu-item"><li><a href="#Consulta">Consultas e Mentorias</a></li></div>
+                    <div class="menu-item"><li><a href="login.html">Agendamento</a></li></div>
+                    <div class="menu-item"><li><a href="#Contato">Contato</a></li></div>
                 </ul>
                 </div>
             </nav>
@@ -36,9 +36,33 @@
         <!-- Destaque -->
         <main>
             <div class="Container">
+                <a href="index.html"><img src="img/logoblack.png" alt="Miguel Iugas" width="300px" height="150px" id="logobg"></a>
             <!-- a class="Botao" href="https://api.whatsapp.com/send?phone=5519997412924" target="_blank">Saiba mais!</!-->
             </div>
         </main>
+        <div class="hero-slider" carousel>
+            <div class="carousel-cell" style="background-image: url(img/foto.jpg);">
+                <div class="info-container">
+                    <h3 class="header">Mentorias e Cursos</h3>
+                    <h2 class="text">Aulas</h2>
+                    <button>Getting Started</button>
+                </div>
+            </div>
+            <div class="carousel-cell" style="background-image: url(img/fundo.jpg);">
+                <div class="info-container">
+                    <h3 class="header">Agendamentos</h3>
+                    <h2 class="text">Consultoria</h2>
+                    <button>Getting Started</button>
+                </div>
+            </div>
+            <div class="carousel-cell" style="background-image: url(img/pict.jpg);">
+                <div class="info-container">
+                    <h3 class="header">Lives e Palestras</h3>
+                    <h2 class="text">Agenda</h2>
+                    <button>Getting Started</button>
+                </div>
+            </div>
+        </div>
         <!-- Sobre -->
         <section id="Sobre">   
             <div class="Container Row">
@@ -60,59 +84,37 @@
         </section>
         <section id="null">
             <div class="nullpoint">
-                <h1>Procedimentos</h1>
             </div>
         </section>
         <!--- PORTIFOLIO -->
-            <div class="hero-slider" carousel>
-                <div class="carousel-cell" style="background-image: url(img/fotooriginal.jpg);">
-                    <div class="info-container">
-                        <h3 class="header">First Slide</h3>
-                        <h2 class="text">Parallex Slider</h2>
-                        <button>Getting Started</button>
-                    </div>
-                </div>
-                <div class="carousel-cell" style="background-image: url(img/foto.jpg);">
-                    <div class="info-container">
-                        <h3 class="header">Second Slide</h3>
-                        <h2 class="text">Parallex Slider</h2>
-                        <button>Getting Started</button>
-                    </div>
-                </div>
-        
-                <div class="carousel-cell" style="background-image: url(img/pict.jpg);">
-                    <div class="info-container">
-                        <h3 class="header">Third Slide</h3>
-                        <h2 class="text">Parallex Slider</h2>
-                        <button>Getting Started</button>
-                    </div>
-                </div>
+
         <!-- CONTATOS -->
-        <section id="Contato1">
-            <div class="Container Flex2">
-                <div class="textoContato">
-                        <img src="img/fone.png" alt="Telefone"><h3>(19) 4042 2652</h3><br></a>
-                    <br>
-                        <a href="mailto:contato.migueliugas@gmail.com.br?subject=SUPORTE"><img src="img/email.png" alt="Enviar e-mail">
-                        <h3>contato.migueliugas@gmail.com.br</h3></a><br>
+        <footer>
+            <section id="Contato1">
+                <div class="Container Flex2">
+                    <div class="textoContato">
+                            <img src="img/fone.png" alt="Telefone"><h3>(19) 4042 2652</h3><br></a>
+                        <br>
+                            <a href="mailto:contato.migueliugas@gmail.com.br?subject=SUPORTE"><img src="img/email.png" alt="Enviar e-mail">
+                            <h3>contato.migueliugas@gmail.com.br</h3></a><br><br>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section id="Contato">
-            <div class="Container  Flex4">
-                <a href="https://api.whatsapp.com/send?phone=5511933058210" target="_blank"><img src="img/whatsapp.png" alt="Whatsapp" id="zap">
-                <a href="https://www.instagram.com/migueliugas/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
-                <a href="https://www.facebook.com/migueliugasfarmaceutico" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
-            </div>
-        </section>
-        <!-- Final da pagina -->
-        <footer id="Creditos">
-            <div class="Container">
-                <h3>©2022 - Skyy Design</h3>
-            </div>
+            </section>
+            <section id="Contato">
+                <div class="Container  Flex4">
+                    <a href="https://api.whatsapp.com/send?phone=5511933058210" target="_blank"><img src="img/whatsapp.png" alt="Whatsapp" id="zap">
+                    <a href="https://www.instagram.com/migueliugas/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/migueliugasfarmaceutico" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+                </div>
+            </section>
+            <!-- Final da pagina -->
+            <section id="Creditos">
+                <div class="Container">
+                    <h3>©2022 - Skyy Design</h3>
+                </div>
+            </section>
         </footer>
-        <script src="https://cdnjs.cloud    flare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <a href="#Inicio" id="topo"><img src="img/topicon.png" alt="Para o inicio"></a>
     </body>
-    
 </html>
