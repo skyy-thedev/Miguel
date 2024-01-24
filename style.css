@@ -320,9 +320,12 @@ main h2 {
     padding: 10px 10px;
     color: white;
     width: cover;
-    height: 75px;
+    height: 95px;
     text-align: center;
     justify-content: center;
+}
+#null h2 {
+    font-size: 2em;
 }
 /* MAPAS */
 #local {
@@ -634,6 +637,9 @@ footer {
         position: static;
         height: 100px;
         width: 390px;
+    }
+    #null h2{
+        font-size: 2em;
     }
     /* LOCALIZAÇÃO DOS MAPAS */
     #local {
