@@ -92,8 +92,8 @@ body {
 }
 
 .hero-slider .flickity-prev-next-button{
-    width: 85px;
-    height: 85px;
+    width: 55px;
+    height: 55px;
     background: transparent;
 }
 
@@ -180,14 +180,14 @@ body {
 header {
     justify-content: space-between;
     background-color: #000000;
-    opacity: 0.9;
+    opacity: 0.99;
     height: 70px;
 }
 #logo img {
-    margin-top: -15px;
-    margin-left: 5px;
-    width: 190px;
-    height: 100px;
+    margin-top: -40px;
+    margin-left: -25px;
+    width: 220px;
+    height: 150px;
 }
 #check {
     display: none;
@@ -215,8 +215,8 @@ nav ul {
     list-style: none;
     background-color: black;
     position: fixed;
-    height: 100vh;
-    top: 70px;
+    height: 60vh;
+    top: 30px;
     right: -100%;
     width: 240px;
     transition: all 0.5s;
@@ -242,15 +242,21 @@ nav ul li a {
 main {
     margin-top: -90px;
     height: 40vh;
-    background-color: #fff;
+    /* background-color: #fff; */
     /* background-image: url(img/background.jpg); */
-    background-attachment: fixed;
-    background-size: 100px no-repeat;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgb(255, 255, 255, 0.5));gi
+    /* background-attachment: fixed;
+    background-size: 100px no-repeat; */
     color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+main img {
+    width: 360px;
+    height: 220px;
+    margin-top: 100px;
 }
 main h1 {
     font-size: 4em;
@@ -279,6 +285,7 @@ main h2 {
     text-shadow: #022031;
     color: #297D94;
     font-size: 1em;
+    margin-left: 3px;
 }
 .foto {
     background-image: url(img/userpic.jpg);
@@ -286,6 +293,7 @@ main h2 {
     margin-top: 10px;
     margin-left: -100px;
     height: 550px;
+    width: 380px;
     position: relative;
     left: -360px; /* Começa fora da tela à esquerda */
     transition: transform 1s ease, left 1s ease
@@ -297,32 +305,39 @@ main h2 {
 } 
  .textoSobre {
     /* text-shadow: 1px 1px 3px #000000; */
+
     color: #022031;
     padding: 10px 10px 10px 10px;
     text-align: center;
     justify-content: center;
 } 
+
+/* LOCALIZAÇÃO FAIXA AZUL  */
 #null {
     background-color: #022031;
     text-shadow: 1px 1px 0px black;
-    font-family: 'Augustus', 'sans serif';
-    padding: 10px 0px;
+    font-family: 'Geosanslight', 'sans serif';
+    padding: 10px 10px;
     color: white;
     width: cover;
-    height: 35px;
+    height: 75px;
     text-align: center;
     justify-content: center;
 }
-.Trio {
-    margin-top: 30px;
-    height: 150px;
-    width: 150px;
-    border-radius: 50px;
-    box-shadow: 1px 1px 3px #000000;
+/* MAPAS */
+#local {
+    display: flex;
 }
-/* PORTIFOLIO */
-#Portifolio h2 {
-    justify-content: bottom;
+
+.localy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.map {
+    background-color: #fff;
+    box-shadow: 3px 2px 10px rgba(41, 125, 148, 0.6);
+    text-align: center;
 }
 /* CONTATO REAL */
 #Contato1 {
@@ -500,7 +515,7 @@ footer {
 
     /* Cabeçalho */
     header {
-        height: 90px;
+        height: 75px;
         opacity: 0.99;
     }
     .FlexMenu {
@@ -536,17 +551,25 @@ footer {
         color: #06A1B4;
     }
     #logo img {
-        margin-top: -35px;
-        width: 280px;
-        height: 150px;
+        margin-top: -55px;
+        margin-left: -30px;
+        width: 300px;
+        height: 180px;
+    }
+    .hero-slider .carousel-cell{
+        width: 70vh;
+        height: 50vh;
+        font-family: 'GeosansLight', sans-serif;
     }
      /* Sobre nós */
     #Sobre {
-    background-color: white;
-    padding: 10px 10px;
-    text-align: left;
-    justify-content: left;
-    align-items: left;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        padding: 10px 10px;
+        text-align: left;
+        justify-content: left;
+        align-items: left;
     }
     .textoSobre {
         text-indent: center;
@@ -556,10 +579,11 @@ footer {
         transition: transform 1s ease, left 1s ease;
     }
     .foto {
-        justify-self: left;
         position: relative;
         left: -400px;
-        width: 150vh;
+        width: 110vh;
+        border-radius: 15px 15px 15px 15px;
+        transition: transform 1s ease-in-out;
     }
     /* #container {
         position: relative;
@@ -611,6 +635,22 @@ footer {
         height: 100px;
         width: 390px;
     }
+    /* LOCALIZAÇÃO DOS MAPAS */
+    #local {
+        display: flex;
+    }
+
+    .localy {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px 170px 10px 170px;
+    }
+    .map {
+        background-color: #fff;
+        box-shadow: 3px 2px 10px rgba(41, 125, 148, 0.6);
+        text-align: center;
+    }
     /* CONTATOS */
     footer {
         display: flex;
@@ -620,6 +660,7 @@ footer {
         margin-left: -30px;
     }
     .textoContato {
+        margin-top: -5px;
         padding-top: 10px;
         text-align: center;
         font-size: small;
